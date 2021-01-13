@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Algo/jquery.min.js.download"></script>
+    <script src="./Algo/tools.js.download"></script>
+    <script src="./Algo/aes.js.download"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Masq</span>uerade</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li class="current"><a href="./AES.html">AES</a></li>
+            <li><a href="./DES.html">DES</a></li>
+            <li><a href="./Rabbit.html">RABBIT</a></li>
+            <li><a href="./RC4.html">RC4</a></li>
+            <li><a href="./Triple%20DES.html">Triple DES</a></li>
+            <li><a href="./XOR.html">XOR</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Advanced Encryption Standard (AES)</h1>
+        <p>The Advanced Encryption Standard, or AES, is a symmetric block cipher chosen by the U.S. government to protect classified information and is implemented in software and hardware throughout the world to encrypt sensitive data. The National Institute of Standards and Technology (NIST) started development of AES in 1997 when it announced the need for a successor algorithm for the Data Encryption Standard (DES), which was starting to become vulnerable to brute-force attacks. This new, advanced encryption algorithm would be unclassified and had to be "capable of protecting sensitive government information well into the next century," according to the NIST announcement of the process for development of an advanced encryption standard algorithm. It was intended to be easy to implement in hardware and software, as well as in restricted environments (for example, in a smart card) and offer good defenses against various attack techniques.</p>
+      </div>
+    </section>
+
+
+      <section id="algo" action="index.html" method="post">
+        <div class="container">
+        <div class="field">
+          <textarea name="name" rows="8" cols="80" id="aes-encrypt-text" placeholder="Plain text"></textarea>
+          <textarea name="name" rows="8" cols="80" id="aes-decrypt-text" placeholder="Cipher text"></textarea>
+        </div>
+        <div class="field">
+          <div class="key">
+            Enter key:
+          </div>
+          <div class="">
+            <input type="password" name="" value="" id="aes-pass" placeholder="Enter Key">
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" name="" value="AES Encrypt" id="aes-encrypt-submit">
+          <input type="submit" name="" value="AES Decrypt" id="aes-decrypt-submit">
+        </div>
+        </div>
+      </section>
+
+
+    <footer>
+      <p>Masquerade, Copyright &copy; 2021</p>
+    </footer>
+
+
+  </body>
+</html>

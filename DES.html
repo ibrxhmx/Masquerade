@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Algo/jquery.min.js.download"></script>
+    <script src="./Algo/tools.js.download"></script>
+    <script src="./Algo/tripledes.js.download"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Masq</span>uerade</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./AES.html">AES</a></li>
+            <li class="current"><a href="./DES.html">DES</a></li>
+            <li><a href="./Rabbit.html">RABBIT</a></li>
+            <li><a href="./RC4.html">RC4</a></li>
+            <li><a href="./Triple%20DES.html">Triple DES</a></li>
+            <li><a href="./XOR.html">XOR</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Data Encryption Standard (DES)</h1>
+        <p>The Data Encryption Standard is a symmetric-key algorithm for the encryption of electronic data. Although insecure, it was highly influential in the advancement of modern cryptography.
+Developed in the early 1970s at IBM and based on an earlier design by Horst Feistel, the algorithm was submitted to the National Bureau of Standards (NBS) following the agency's invitation to propose a candidate for the protection of sensitive, unclassified electronic government data. In 1976, after consultation with the National Security Agency (NSA), the NBS eventually selected a slightly modified version (strengthened against differential cryptanalysis, but weakened against brute-force attacks), which was published as an official Federal Information Processing Standard (FIPS) for the United States in 1977.</p>
+      </div>
+    </section>
+
+
+      <section id="algo" action="index.html" method="post">
+        <div class="container">
+        <div class="field">
+          <textarea name="name" rows="8" cols="80" id="des-encrypt-text" placeholder="Plain text"></textarea>
+          <textarea name="name" rows="8" cols="80" id="des-decrypt-text" placeholder="Cipher text"></textarea>
+        </div>
+        <div class="field">
+          <div class="key">
+            Enter key:
+          </div>
+          <div class="">
+            <input type="password" name="" value="" id="des-pass" placeholder="Enter Key">
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" name="" value="AES Encrypt" id="des-encrypt-submit">
+          <input type="submit" name="" value="AES Decrypt" id="des-decrypt-submit">
+        </div>
+        </div>
+      </section>
+
+
+    <footer>
+      <p>Masquerade, Copyright &copy; 2021</p>
+    </footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Algo/jquery.min.js.download"></script>
+    <script src="./Algo/tools.js.download"></script>
+    <script src="./Algo/rc4.js.download"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Masq</span>uerade</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./AES.html">AES</a></li>
+            <li><a href="./DES.html">DES</a></li>
+            <li><a href="./Rabbit.html">RABBIT</a></li>
+            <li class="current"><a href="./RC4.html">RC4</a></li>
+            <li><a href="./Triple%20DES.html">Triple DES</a></li>
+            <li><a href="./XOR.html">XOR</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Rivest Cipher 4 (RC4)</h1>
+        <p>The RC4 Encryption Algorithm, developed by Ronald Rivest of RSA, is a shared key stream cipher algorithm requiring a secure exchange of a shared key. RC4 is no longer considered secure and careful consideration should be taken regarding it’s use.  The symmetric key algorithm is used identically for encryption and decryption such that the data stream is simply XORed with the generated key sequence. The algorithm is serial as it requires successive exchanges of state entries based on the key sequence. Hence implementations can be very computationally intensive. The RC4 encryption algorithm is used by standards such as IEEE 802.11 within WEP (Wireless Encryption Protocol) using 40 and 128-bit keys.</p>
+        </div>
+    </section>
+
+
+      <section id="algo" action="index.html" method="post">
+        <div class="container">
+        <div class="field">
+          <textarea name="name" rows="8" cols="80" id="rc4-encrypt-text" placeholder="Plain text"></textarea>
+          <textarea name="name" rows="8" cols="80" id="rc4-decrypt-text" placeholder="Cipher text"></textarea>
+        </div>
+        <div class="field">
+          <div class="key">
+            Enter key:
+          </div>
+          <div class="">
+            <input type="password" name="" value="" id="rc4-pass" placeholder="Enter Key">
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" name="" value="RC4 Encrypt" id="rc4-encrypt-submit">
+          <input type="submit" name="" value="RC4 Decrypt" id="rc4-decrypt-submit">
+        </div>
+        </div>
+      </section>
+
+
+    <footer>
+      <p>Masquerade, Copyright &copy; 2021</p>
+    </footer>
+
+
+  </body>
+</html>

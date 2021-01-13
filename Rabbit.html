@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Algo/jquery.min.js.download"></script>
+    <script src="./Algo/tools.js.download"></script>
+    <script src="./Algo/rabbit.js.download"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Masq</span>uerade</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./AES.html">AES</a></li>
+            <li><a href="./DES.html">DES</a></li>
+            <li class="current"><a href="./Rabbit.html">RABBIT</a></li>
+            <li><a href="./RC4.html">RC4</a></li>
+            <li><a href="./Triple%20DES.html">Triple DES</a></li>
+            <li><a href="./XOR.html">XOR</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Rabbit</h1>
+        <p>Rabbit was first presented in February 2003 at the 10th FSE workshop. In May 2005, it was submitted to the eSTREAM project of the ECRYPT network.
+
+Rabbit was designed by Martin Boesgaard, Mette Vesterager, Thomas Pedersen, Jesper Christiansen and Ove Scavenius.
+
+The authors of the cipher have provided a full set of cryptanalytic white papers on the Cryptico home page. It is also described in RFC 4503. Cryptico had patents pending for the algorithm and for many years required a license fee for commercial use of the cipher which was waived for non-commercial uses. However, the algorithm was made free for any use on October 6, 2008. Also the website states that the algorithm and implementation is public domain software and offers the source code free for download.</p>
+        </div>
+    </section>
+
+
+      <section id="algo" action="index.html" method="post">
+        <div class="container">
+        <div class="field">
+          <textarea name="name" rows="8" cols="80" id="rabbit-encrypt-text" placeholder="Plain text"></textarea>
+          <textarea name="name" rows="8" cols="80" id="rabbit-decrypt-text" placeholder="Cipher text"></textarea>
+        </div>
+        <div class="field">
+          <div class="key">
+            Enter key:
+          </div>
+          <div class="">
+            <input type="password" name="" value="" id="rabbit-pass" placeholder="Enter Key">
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" name="" value="AES Encrypt" id="rabbit-encrypt-submit">
+          <input type="submit" name="" value="AES Decrypt" id="rabbit-decrypt-submit">
+        </div>
+        </div>
+      </section>
+
+
+    <footer>
+      <p>Masquerade, Copyright &copy; 2021</p>
+    </footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./Algo/jquery.min.js.download"></script>
+    <script src="./Algo/tools.js.download"></script>
+    <script src="./Algo/tripledes.js.download"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Masq</span>uerade</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./AES.html">AES</a></li>
+            <li><a href="./DES.html">DES</a></li>
+            <li><a href="./Rabbit.html">RABBIT</a></li>
+            <li><a href="./RC4.html">RC4</a></li>
+            <li class="current"><a href="./Triple%20DES.html">Triple DES</a></li>
+            <li><a href="./XOR.html">XOR</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Triple Data Encryption Standard (Triple-DES)</h1>
+        <p>Triple DES (aka 3DES, 3-DES, TDES) is based on the DES (Data Encryption Standard) algorithm, therefore it is very easy to modify existing software to use Triple DES. It also has the advantage of proven reliability and a longer key length that eliminates many of the attacks that can be used to reduce the amount of time it takes to break DES. However, even this more powerful version of DES may not be strong enough to protect data for very much longer (due in particular to the small block size). As such, the DES algorithm itself has become obsolete and is no longer used.The National Institute of Standards and Technology (NIST) ratified the Advanced Encryption Standard (AES) as a replacement for DES. NIST endorsed Triple DES as an interim standard to be used until AES was finished. Although AES is at least as strong as Triple DES, it is significantly faster. Many security systems may support both Triple DES and AES where AES is the default algorithm. Although Triple DES may be maintained for backward compatibility, it is no longer recommended.</p>
+        </div>
+    </section>
+
+
+      <section id="algo" action="index.html" method="post">
+        <div class="container">
+        <div class="field">
+          <textarea name="name" rows="8" cols="80" id="triple-des-encrypt-text" placeholder="Plain text"></textarea>
+          <textarea name="name" rows="8" cols="80" id="triple-des-decrypt-text" placeholder="Cipher text"></textarea>
+        </div>
+        <div class="field">
+          <div class="key">
+            Enter key:
+          </div>
+          <div class="">
+            <input type="password" name="" value="" id="triple-pass" placeholder="Enter Key">
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" name="" value="Triple DES Encrypt" id="triple-des-encrypt-submit">
+          <input type="submit" name="" value="Triple DES Decrypt" id="triple-des-decrypt-submit">
+        </div>
+        </div>
+      </section>
+
+
+    <footer>
+      <p>Masquerade, Copyright &copy; 2021</p>
+    </footer>
+
+
+  </body>
+</html>
